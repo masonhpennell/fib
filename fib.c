@@ -14,6 +14,7 @@ unsigned int fib(unsigned int n) {
     return fib(n - 1) + fib(n - 2);
 }
 
+//main functions
 int main(int argc, char *argv[]) {
     // If no arguments were supplied, print a few Fibonacci numbers
     if (argc == 1) {
@@ -33,14 +34,14 @@ int main(int argc, char *argv[]) {
             // Check that the argument supplied contains a valid number
             for (unsigned int j = 0; j < strlen(argv[i]); j++) {
                 if (!isdigit(argv[i][j])) {
-                    printf("Error: arguments must be valid numbers.");
+                    printf("Must be valid fucking numbers");
                     return 1;
                 }
             }
             // Convert the input character(s) to an integer
             int input = atoi(argv[i]);
             if (!(input >= 0)) {
-                printf("Error: arguments must be positive numbers.");
+                printf("Not positive enough, shithead");
                 return 1;
             }
             // Print the Fibonacci number of the input value
