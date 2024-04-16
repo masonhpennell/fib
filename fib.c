@@ -14,6 +14,10 @@ unsigned int fib(unsigned int n) {
     return fib(n - 1) + fib(n - 2);
 }
 
+int foo() {
+    return 0;
+}
+
 //main functions
 int main(int argc, char *argv[]) {
     // If no arguments were supplied, print a few Fibonacci numbers
